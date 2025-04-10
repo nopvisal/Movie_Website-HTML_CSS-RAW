@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+
+    <title style="color: darkred;">Amze.zone</title>
+    
+    <style>
+    
+     @media (min-width: 375px) and (max-width: 450px){
+    
+    .main1{
+        width: 250px;
+      height: 100%;
+      transform: translateX(-100%);
+      transition: 0.2s ease-in-out;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 1rem;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+      z-index: 1;
+    }
+    .main1.show {
+        transform: translateX(0);
+      
+    }
+    .main2{
+        width: 100%;
+        height: 1300px;
+        padding: 0 30px;
+    }
+    
+    .pic2{
+        position: relative;
+        float: none;
+        left: -200px;
+    }
+    .pic1{
+        width: 85%;
+        float: none;
+        position: absolute;
+    }
+    .tinypic{
+        width: 33%;
+    }
+    .title1{
+        font-size: 30px;
+    }
+    .Movie{
+        gap: 25px;
+    }
+    .box{
+        width: calc((100% - 50px) / 3);
+        height: 160px;
+    }
+    .section-control{
+        width: calc((100% - 20px) / 2);
+    }
+    .play i {
+    font-size: 25px;
+    opacity: 0;
+    margin-left: 10px;
+}
+    .icon{
+    
+      top: 1rem;
+      left: 1rem;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      opacity: 1;
+    }
+    .icon.active {
+       
+        color: white;
+    }
+    .tem-icon{
+        display: none;
+    }
+    .icon-back{
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1050px){
+    .main1{
+
+        width: 20%;
+        height: 1600px;
+    }
+    .main2{
+        width: 80%;
+        height: 1600px;
+    }
+   .pic2{
+    margin-left: -50px;
+   }
+    .title1{
+        font-size: 30px;
+    }
+    .Movie{
+        gap: 30px;
+    }
+    .box{
+        width: calc((100% - 60px) / 3);
+        height: 300px;
+    }
+    .section-control{
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+   
+   <div id="box" class="main1">
+       <div class="stick"> 
+        <a href="index.html"><div class="logo">Amze.<span> zone</span></div></a>
+        <div class="newfeed">
+            <ul class="new">New Feed
+                <li><i class="fa-solid fa-compass"></i> Browse</li>
+                <li><i class="fa-regular fa-heart"></i> Watch lists</li>
+                <li><i class="fa-solid fa-calendar-days"></i> Coming soon</li>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <div>
+            <ul class="follow">Following
+                <li><i class="fa-solid fa-user"></i> Kfeii &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-signal"></i></li>
+                <li><i class="fa-solid fa-user"></i> Sasa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-signal"></i></li>
+                <li><i class="fa-solid fa-user"></i> Visalsk &nbsp;&nbsp;<i class="fa-solid fa-signal"></i></li>
+                <li><i class="fa-solid fa-user"></i> Rayuk &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-signal"></i></li>
+                <li><i class="fa-solid fa-user"></i> Meymey<i class="fa-solid fa-signal"></i></li>
+                <li><i class="fa-solid fa-user"></i> Meyly &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-signal"></i></li>
+                
+            </ul>
+        </div>
+        <div class="load"><i class="fa-solid fa-circle-chevron-down"></i> Load more</div>
+        <div class="line2"></div>
+        <div class="logout"><i class="fa-solid fa-right-from-bracket"></i> Log out</div>
+    </div>
+    </div>
+    <div class="main2">
+        <div class="menu">
+            <div class="minimenu1">
+                <div class="icon2">
+                    <i class="fa-solid fa-chevron-left tem-icon"></i>
+                    <i class="fa-solid fa-chevron-right tem-icon"></i>
+                    <i id="list" class="fa-solid fa-list icon" style="font-size: 25px;color: white;"></i>
+                </div>
+            </div>
+            <div class="minimenu2">
+                
+                <div class="icon1">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div class="pf"> <img src="img/pf-1.png " width="50px"></div>
+            </div>
+        </div>
+        <div class="bg-slide">
+            <div class="bg-m"><div class="pic1">
+                <div class="title1">The <b><span>SOUL CONDUCTOR</span></b></div>
+                <div class="rate"><i class="fa-solid fa-star"></i> 7.8 </div>
+                <div class="flag"><img src="img/—Pngtree—american flag elements_3806803.png" alt="" width="30px"></div>
+                <div style="margin-top: 35px; font-size: 13px;">English</div>
+                <a href="#watch"><div class="watch"> <b>Watch</b></div></a>
+                <div class="more"><img src="img/NicePng_cammy-png_1829287.png" alt="" width="25px"> <img src="img/PngItem_3481514.png" alt="" width="25px"> <img src="img/pngfind.com-profile-picture-png-4887957.png" alt="" width="25px"></div>
+                <div style="margin-top: 112px; font-size: 13px; color: gray;">+5 friends are watching</div>
+            </div>
+            </div>
+            <div class="bg-m">
+                <div class="pic2">
+            <img src="img/MV5BNTc1NjRlZjMtYjUzMS00OGI2LWIwM2MtNjk5NGZlMjg1YmI0XkEyXkFqcGdeQXVyNjU1OTIyNTI@._V1_.png" alt="" width="530px" height="480px">
+            
+            </div>
+        </div>
+    </div>
+        
+        <h2 style="color: white; margin-right: 30px; margin-bottom: 15px; position: relative;">Parties <div class="tinyline"></div></h2>
+       
+        <div class="boxm">
+            <div class="sections">
+        <div class="section-control"><div class="box1">
+        <div class="main-pf">    
+            <div class="tinypic"><div class="tinypic1"></div></div>
+            <div class="tinypf1"><img src="img/NicePng_cammy-png_1829287.png" alt="" width="20px"> <img src="img/PngItem_3481514.png" alt="" width="20px"> <img src="img/pngfind.com-profile-picture-png-4887957.png" alt="" width="20px"></div>
+        </div>
+                <div class="minit1">Battle Angel Alita</div>
+                <div class="about1">Science Fiction,Fantasy</div>
+            </div>
+        </div>
+        <div class="section-control"><div class="box2">
+            <div class="main-pf">
+                <div class="tinypic"><div class="tinypic2"></div></div>
+                <div class="tinypf2"><img src="img/NicePng_cammy-png_1829287.png" alt="" width="20px"> <img src="img/PngItem_3481514.png" alt="" width="20px"> <img src="img/pngfind.com-profile-picture-png-4887957.png" alt="" width="20px"></div>
+            </div>
+                <div class="minit2">Sonic the Hedgehog</div>
+                <div class="about2">Adventure,Action</div>
+            </div>
+        </div>
+            <div class="section-control"><div class="box3">
+                <div class="main-pf">
+                    <div class="tinypic"><div class="tinypic3"></div></div>
+                <div class="tinypf3"><img src="img/NicePng_cammy-png_1829287.png" alt="" width="20px"> <img src="img/PngItem_3481514.png" alt="" width="20px"> <img src="img/pngfind.com-profile-picture-png-4887957.png" alt="" width="20px"></div>
+                
+            </div>
+                <div class="minit3">Iron Man 3</div>
+                <div class="about3">Science Fiction,Action</div>
+            </div>
+        </div>
+            <div class="section-control"><div class="box4">
+                
+                <div class="main-pf">
+                    <div class="tinypic"><div class="tinypic4"></div></div>
+                    <div class="tinypf4"><img src="img/NicePng_cammy-png_1829287.png" alt="" width="20px"> <img src="img/PngItem_3481514.png" alt="" width="20px"> <img src="img/pngfind.com-profile-picture-png-4887957.png" alt="" width="20px"></div>
+                
+            </div>
+                <div class="minit4">Avengers: Infinity War</div>
+                <div class="about4">Science Fiction,Action</div>
+            </div>
+        </div>
+        </div>
+            
+           <div style="margin-bottom: 5px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+           
+           <h2 id="watch" style="color: white; margin-right: 30px; margin-bottom: px;">Continues Watching<div class="tinyline1"></div></h2></div>
+       
+            <ul class="Movie">
+               
+                <a class="box" href="pages/vid1.html"><li class="movie1">
+                   <div class="play"><i class="fa-regular fa-circle-play"></i></div>
+                </li></a>
+                
+                
+                <a class="box" href="pages/vid2.html"><li class="movie2">
+                    <div class="play" ><i class="fa-regular fa-circle-play"></i></div>
+                </li></a>
+               
+                <a class="box" href="pages/vid3.html"><li class="movie3">
+                    <div class="play"><i class="fa-regular fa-circle-play"></i></div>
+                </li></a>
+               
+                <a class="box" href="pages/vid4.html"><li class="movie4">
+                    <div class="play"><i class="fa-regular fa-circle-play"></i></div>
+                </li></a>
+               
+                <a class="box" href="pages/vid5.html"><li class="movie5">
+                    <div class="play"><i class="fa-regular fa-circle-play"></i></div>
+                </li></a>
+                <a class="box" href="pages/vid5.html"><li class="movie6">
+                    <div class="play"><i class="fa-regular fa-circle-play"></i></div>
+                </li></a>
+                
+            </ul>
+        
+       
+       
+    </div>
+</div>
+
+<script>
+    const icon = document.getElementById('list');
+    const sidebar = document.getElementById('box');
+   
+    icon.addEventListener('click', (e) => {
+      e.stopPropagation();
+      sidebar.classList.toggle('show');
+      icon.classList.toggle('active');
+    });
+
+    // Prevent clicks inside sidebar from closing it
+    sidebar.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+
+    // Hide sidebar on click outside
+    document.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !icon.contains(e.target)) {
+        sidebar.classList.remove('show');
+        icon.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
